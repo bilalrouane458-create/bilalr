@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Contact - Bilal Rouane</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Bilal Rouane pour des opportunités professionnelles">
+    
+    <!-- Import de la police ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Images/Photo pro.jpeg">
+    
+    <!-- Font Awesome pour icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="fond">
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav id="navigation" aria-label="Navigation principale">
+            <ul class="menu">
+                <li class="logo">
+                    <img src="Images/signature.png" id="signature" alt="Signature Bilal Rouane">
+                </li>
+                <li>
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="apropos.html" class="nav-link">
+                        <i class="fas fa-user"></i> À propos
+                    </a>
+                </li>
+                <li>
+                    <a href="btssisr.html" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i> BTS SISR
+                    </a>
+                </li>
+                <li>
+                    <a href="e4.html" class="nav-link">
+                        <i class="fas fa-tasks"></i> Épreuve E4
+                    </a>
+                </li>
+                <li>
+                    <a href="e5.html" class="nav-link">
+                        <i class="fas fa-server"></i> Épreuve E5
+                    </a>
+                </li>
+                <li>
+                    <a href="veille.html" class="nav-link">
+                        <i class="fas fa-binoculars"></i> Veille
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <span id="saut_separateur"></span>
+    </header>
+
+    <!-- ===== CONTENU CONTACT ===== -->
+    <main>
+        <div class="contenu">
+            <span id="saut_menu"></span>
+            
+            <!-- Section Titre -->
+            <section id="titre-contact">
+                <h1 class="page-titre">Contact</h1>
+                <p class="page-sous-titre">N'hésitez pas à me contacter pour discuter de projets ou d'opportunités</p>
+            </section>
+
+            <!-- Section Formulaire -->
+            <section id="formulaire-contact" class="section-contact">
+                <div class="formulaire-container">
+                    <h2 class="section_titres">
+                        <i class="fas fa-paper-plane"></i> Envoyer un message
+                    </h2>
+                    
+                    <form id="contact-form" class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nom"><i class="fas fa-user"></i> Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required 
+                                   placeholder="Votre nom et prénom">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Adresse email *</label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="votre@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telephone"><i class="fas fa-phone"></i> Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" 
+                                       placeholder="+33 1 23 45 67 89">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet"><i class="fas fa-tag"></i> Sujet *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="alternance">Proposition d'alternance</option>
+                                <option value="stage">Proposition de stage</option>
+                                <option value="projet">Projet professionnel</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Votre message..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="consentement" name="consentement" required>
+                            <label for="consentement">
+                                J'accepte que mes données personnelles soient utilisées pour traiter ma demande *
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                            <button type="reset" class="btn-reset">
+                                <i class="fas fa-redo"></i> Effacer le formulaire
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Section Coordonnées -->
+            <section id="coordonnees-contact" class="section-contact">
+                <h2 class="section_titres">
+                    <i class="fas fa-address-card"></i> Mes coordonnées
+                </h2>
+                
+                <div class="coordonnees-container">
+                    <div class="coordonnees-grid">
+                        <div class="coordonnee-card">
+                            <div class="coordonnee-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="coordonnee-content">
+                                <h3>Email</h3>
+                                <a href="mailto:bilal.rouane.pro@gmail.com" class="coordonnee-link">
+                                    bilal.rouane.pro@gmail.com
+                                </a>
+                                <p>Réponse sous 48 heures</p>
+                            </div>
+                        </div>
+                        
+                        <div class="coordonnee-card">
+                            <div class="coordonnee-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="coordonnee-content">
+                                <h3>Téléphone</h3>
+                                <a href="tel:+33743290209" class="coordonnee-link">
+                                    +33 7 43 29 02 09
+                                </a>
+                                <p>Disponible du lundi au vendredi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="coordonnee-card">
+                            <div class="coordonnee-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="coordonnee-content">
+                                <h3>Localisation</h3>
+                                <p>Paris, France</p>
+                                <p>Mobile en Île-de-France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="coordonnee-card">
+                            <div class="coordonnee-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="coordonnee-content">
+                                <h3>Disponibilité</h3>
+                                <p>Recherche alternance</p>
+                                <p>Démarrage immédiat</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="localisation-info">
+                        <div class="localisation-text">
+                            <h3><i class="fas fa-info-circle"></i> À propos de ma localisation</h3>
+                            <p>Je suis actuellement basé à <strong>Paris</strong> et disponible pour des opportunités en Île-de-France ou en télétravail partiel.</p>
+                            <p>Mon parcours international (Espagne, Algérie) me permet de m'adapter facilement à différents environnements de travail.</p>
+                        </div>
+                        
+                        <div class="mobilite-info">
+                            <h4><i class="fas fa-car"></i> Mobilité :</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Île-de-France</li>
+                                <li><i class="fas fa-check"></i> Télétravail partiel</li>
+                                <li><i class="fas fa-check"></i> Déplacements occasionnels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Réseaux Sociaux -->
+            <section id="reseaux-contact" class="section-contact">
+                <h2 class="section_titres">
+                    <i class="fas fa-share-alt"></i> Réseaux professionnels
+                </h2>
+                
+                <div class="reseaux-container">
+                    <div class="reseaux-grid">
+                        <a href="https://www.linkedin.com/in/bilal-rouane-311133340/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="reseau-card linkedin">
+                            <div class="reseau-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="reseau-content">
+                                <h3>LinkedIn</h3>
+                                <p>Profil professionnel et expériences</p>
+                                <span class="reseau-link">Visiter mon profil</span>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:bilal.rouane.pro@gmail.com" 
+                           class="reseau-card email">
+                            <div class="reseau-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="reseau-content">
+                                <h3>Email direct</h3>
+                                <p>Contact professionnel privilégié</p>
+                                <span class="reseau-link">Envoyer un email</span>
+                            </div>
+                        </a>
+                        
+                        <div class="reseau-card portfolio">
+                            <div class="reseau-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="reseau-content">
+                                <h3>Portfolio</h3>
+                                <p>Ce site présente mes compétences</p>
+                                <span class="reseau-link">Vous y êtes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="reseau-card cv">
+                            <div class="reseau-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="reseau-content">
+                                <h3>CV détaillé</h3>
+                                <p>Disponible sur demande</p>
+                                <span class="reseau-link">Me contacter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Disponibilité -->
+            <section id="disponibilite-contact" class="section-contact">
+                <h2 class="section_titres">
+                    <i class="fas fa-calendar-check"></i> Disponibilités
+                </h2>
+                
+                <div class="disponibilite-container">
+                    <div class="disponibilite-content">
+                        <div class="disponibilite-card">
+                            <h3><i class="fas fa-graduation-cap"></i> Recherche d'alternance</h3>
+                            <p>Je suis actuellement à la recherche d'une <strong>alternance en administration systèmes et réseaux</strong> pour la rentrée 2025.</p>
+                            <ul class="disponibilite-list">
+                                <li><i class="fas fa-check"></i> Rythme : 3 semaines entreprise / 1 semaine école</li>
+                                <li><i class="fas fa-check"></i> Durée : 12 à 24 mois</li>
+                                <li><i class="fas fa-check"></i> Secteurs : Tous secteurs d'activité</li>
+                                <li><i class="fas fa-check"></i> Localisation : Paris et Île-de-France</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="disponibilite-card">
+                            <h3><i class="fas fa-briefcase"></i> Projets professionnels</h3>
+                            <p>Je suis intéressé par les projets dans les domaines suivants :</p>
+                            <div class="projets-interets">
+                                <span class="projet-badge">Administration réseaux</span>
+                                <span class="projet-badge">Cybersécurité</span>
+                                <span class="projet-badge">Infrastructure cloud</span>
+                                <span class="projet-badge">Virtualisation</span>
+                                <span class="projet-badge">Support technique</span>
+                                <span class="projet-badge">Projets internationaux</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-direct">
+                        <h3><i class="fas fa-comment-dots"></i> Contact direct</h3>
+                        <p>Pour un échange plus rapide, n'hésitez pas à :</p>
+                        <div class="contact-options">
+                            <a href="tel:+33743290209" class="contact-option">
+                                <i class="fas fa-phone"></i>
+                                <span>M'appeler directement</span>
+                            </a>
+                            <a href="mailto:bilal.rouane.pro@gmail.com" class="contact-option">
+                                <i class="fas fa-envelope"></i>
+                                <span>Envoyer un email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bilal-rouane-311133340/" 
+                               target="_blank" 
+                               class="contact-option">
+                                <i class="fab fa-linkedin"></i>
+                                <span>Me contacter sur LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-contenu">
+            <div class="footer-section">
+                <h3 class="footer-titre"><i class="fas fa-sitemap"></i> Navigation</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="apropos.html"><i class="fas fa-user"></i> À propos</a></li>
+                    <li><a href="btssisr.html"><i class="fas fa-graduation-cap"></i> BTS SISR</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-titre"><i class="fas fa-star"></i> Expertises</h3>
+                <ul class="footer-competences">
+                    <li><i class="fas fa-network-wired"></i> Réseaux Cisco & Fortinet</li>
+                    <li><i class="fas fa-shield-alt"></i> Sécurité informatique</li>
+                    <li><i class="fas fa-server"></i> Administration systèmes</li>
+                    <li><i class="fas fa-flask"></i> Riguer scientifique</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-titre"><i class="fas fa-bullseye"></i> Objectifs 2025</h3>
+                <ul class="footer-certifications">
+                    <li><i class="fas fa-graduation-cap"></i> BTS SIO SISR</li>
+                    <li><i class="fas fa-certificate"></i> Stage BADR Algérie</li>
+                    <li><i class="fas fa-shield-alt"></i> Fortinet NSE4</li>
+                    <li><i class="fas fa-globe"></i> Carrière internationale</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bas">
+            <div class="reseaux-footer">
+                <a href="https://www.linkedin.com/in/bilal-rouane-311133340/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <img src="Images/LinkedIn_icon.svg" alt="LinkedIn" width="30">
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 - Bilal Rouane - Tous droits réservés</p>
+                <p><i class="fas fa-envelope"></i> bilal.rouane.pro@gmail.com | <i class="fas fa-phone"></i> +33743290209</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour mettre en surbrillance la page active
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage || 
+                    (currentPage === '' && link.getAttribute('href') === 'index.html')) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
+            // Script pour le formulaire de contact
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupération des données du formulaire
+                    const formData = {
+                        nom: document.getElementById('nom').value,
+                        email: document.getElementById('email').value,
+                        telephone: document.getElementById('telephone').value,
+                        sujet: document.getElementById('sujet').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Simulation d'envoi
+                    console.log('Formulaire soumis:', formData);
+                    
+                    // Message de confirmation
+                    alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
+                    
+                    // Réinitialisation du formulaire
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
